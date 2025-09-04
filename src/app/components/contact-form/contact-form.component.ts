@@ -19,6 +19,7 @@ import { trigger, transition, style, animate } from "@angular/animations";
             ]),
         ]),
     ],
+    standalone: false
 })
 export class ContactFormComponent {
     form = new FormGroup({
