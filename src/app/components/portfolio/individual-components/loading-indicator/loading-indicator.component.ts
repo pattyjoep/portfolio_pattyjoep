@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: "app-loading-indicator",
     templateUrl: "./loading-indicator.component.html",
     styleUrl: "./loading-indicator.component.scss",
-    standalone: false
+    standalone: false,
 })
 export class LoadingIndicatorComponent {}

@@ -4,7 +4,7 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
     selector: "app-range-slider",
     templateUrl: "./range-slider.component.html",
     styleUrl: "./range-slider.component.scss",
-    standalone: false
+    standalone: false,
 })
 export class RangeSliderComponent {
     sliderValue = 50;

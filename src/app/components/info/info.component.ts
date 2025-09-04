@@ -5,7 +5,7 @@ import { WindowService } from "../../services/window/window.service";
     selector: "app-info",
     templateUrl: "./info.component.html",
     styleUrl: "./info.component.scss",
-    standalone: false
+    standalone: false,
 })
 export class InfoComponent {
     constructor(public windowService: WindowService) {}

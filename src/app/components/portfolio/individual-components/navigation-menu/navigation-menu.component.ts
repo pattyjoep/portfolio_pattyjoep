@@ -10,7 +10,7 @@ interface NavigationMenuOption {
     selector: "app-navigation-menu",
     templateUrl: "./navigation-menu.component.html",
     styleUrls: ["./navigation-menu.component.scss"],
-    standalone: false
+    standalone: false,
 })
 export class NavigationMenuComponent {
     menuOpen = false;
