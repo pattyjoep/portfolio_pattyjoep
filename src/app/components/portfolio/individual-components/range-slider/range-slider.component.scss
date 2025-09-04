@@ -1,4 +1,4 @@
-@import "../../../../../scss/custom-variables.scss";
+@use "../../../../../scss/custom-variables.scss" as cssVariables;
 
 .range-slider {
     -webkit-appearance: none;
@@ -56,7 +56,7 @@ p {
     border-radius: 50%;
     text-align: center;
 
-    @media (width <= $screenSize-mobileMini) {
+    @media (width <= cssVariables.$screenSize-mobileMini) {
         top: -5px;
         right: -5px;
     }

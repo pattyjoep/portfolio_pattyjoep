@@ -1,11 +1,11 @@
 // custom CSS variables fle
-@import "scss/custom-variables.scss";
+@use "scss/custom-variables.scss" as cssVariables;
 
 // Dosis font
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 body {
-    font-family: $fontFamilyBody;
+    font-family: cssVariables.$fontFamilyBody;
     font-weight: 500;
     color: #0c0c0c;
     background-color: #080808;
@@ -84,7 +84,7 @@ button {
     background: linear-gradient(to right, #478089, #385e65);
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: $button--letter-Spacing;
+    letter-spacing: cssVariables.$button--letter-Spacing;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -108,7 +108,7 @@ button {
 
         // use base letter-spacing for disabled buttons in a hovered state
         &:hover {
-            letter-spacing: $button--letter-Spacing;
+            letter-spacing: cssVariables.$button--letter-Spacing;
         }
     }
 
@@ -119,7 +119,7 @@ button {
 
         &:hover {
             scale: 1.1;
-            letter-spacing: $button--letter-Spacing;
+            letter-spacing: cssVariables.$button--letter-Spacing;
         }
     }
 

@@ -1,4 +1,4 @@
-@import "../../../../../scss/custom-variables.scss";
+@use "../../../../../scss/custom-variables.scss" as cssVariables;
 
 button {
     background: linear-gradient(to right, #4d6f8b, #25557c);
@@ -70,7 +70,7 @@ button {
                     right: 55px;
                     transition-delay: 0.2s;
 
-                    @media (width <= $screenSize-mobileMini) {
+                    @media (width <= cssVariables.$screenSize-mobileMini) {
                         right: 50px;
                     }
                 }
@@ -79,7 +79,7 @@ button {
                     right: 90px;
                     transition-delay: 0.3s;
 
-                    @media (width <= $screenSize-mobileMini) {
+                    @media (width <= cssVariables.$screenSize-mobileMini) {
                         right: 85px;
                     }
                 }
@@ -88,7 +88,7 @@ button {
                     right: 105px;
                     transition-delay: 0.1s;
 
-                    @media (width <= $screenSize-mobileMini) {
+                    @media (width <= cssVariables.$screenSize-mobileMini) {
                         right: 100px;
                     }
                 }
@@ -97,7 +97,7 @@ button {
                     right: 5px;
                     transition-delay: 0.4s;
 
-                    @media (width <= $screenSize-mobileMini) {
+                    @media (width <= cssVariables.$screenSize-mobileMini) {
                         right: 0;
                     }
                 }
@@ -106,7 +106,7 @@ button {
                     right: 20px;
                     transition-delay: 0.5s;
 
-                    @media (width <= $screenSize-mobileMini) {
+                    @media (width <= cssVariables.$screenSize-mobileMini) {
                         right: 15px;
                     }
                 }

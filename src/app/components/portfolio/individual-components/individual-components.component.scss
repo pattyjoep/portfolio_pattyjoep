@@ -1,4 +1,4 @@
-@import "../../../../scss/custom-variables.scss";
+@use "../../../../scss/custom-variables.scss" as cssVariables;
 
 .individual-components {
     // justify-content: start;
@@ -17,7 +17,7 @@
         padding: 10px;
         border-radius: 10px;
 
-        @media (width <= $screenSize-mobileMini) {
+        @media (width <= cssVariables.$screenSize-mobileMini) {
             width: 130px;
             height: 130px;
         }

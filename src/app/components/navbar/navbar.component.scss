@@ -1,4 +1,4 @@
-@import "../../../scss/custom-variables.scss";
+@use "../../../scss/custom-variables.scss" as cssVariables;
 
 nav {
     position: sticky;
@@ -13,7 +13,7 @@ nav {
     margin: auto;
     z-index: 9999;
 
-    @media (width <= $screenSize-tablet) {
+    @media (width <= cssVariables.$screenSize-tablet) {
         flex-wrap: nowrap;
         justify-content: start;
         overflow: auto;
