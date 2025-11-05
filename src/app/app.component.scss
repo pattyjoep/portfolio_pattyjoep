@@ -1,25 +1,31 @@
 @import "../scss/custom-variables.scss";
 
-.content {
-    max-width: 1140px;
-    margin: 10px auto;
+.main {
+    max-height: 100vh;
+    overflow: auto;
+    padding: 0 10px;
 
-    .content-tile {
-        max-height: 545px;
-        justify-content: start;
-        align-items: start;
-        flex-grow: 1;
-        flex-basis: 50%;
+    .content {
+        max-width: 1140px;
+        margin: 10px auto;
 
-        @media (width <= $screenSize-tablet) {
-            max-height: unset;
-        }
+        .content-tile {
+            max-height: 545px;
+            justify-content: start;
+            align-items: start;
+            flex-grow: 1;
+            flex-basis: 50%;
 
-        &.content-tile-individual-components {
-            min-height: 479px;
+            @media (width <= $screenSize-tablet) {
+                max-height: unset;
+            }
 
-            @media (width <= $screenSize-desktopLarge) {
-                min-height: 200px;
+            &.content-tile-individual-components {
+                min-height: 479px;
+
+                @media (width <= $screenSize-desktopLarge) {
+                    min-height: 200px;
+                }
             }
         }
     }
