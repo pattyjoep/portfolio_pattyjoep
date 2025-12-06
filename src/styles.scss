@@ -1,8 +1,21 @@
 // custom CSS variables fle
 @import "scss/custom-variables.scss";
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 // Dosis font
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+app-root {
+    min-height: 100vh;
+    position: relative;
+    display: block;
+}
 
 body {
     font-family: $fontFamilyBody;
@@ -133,4 +146,13 @@ button {
         height: 45px;
     }
 
+}
+
+mat-bottom-sheet-container {
+    display: flex !important;
+    justify-content: center !important;
+    font-family: Dosis, "Trebuchet MS", sans-serif !important;
+    padding: 50px 16px 22px !important;
+    background: #ffffff21 !important;
+    backdrop-filter: blur(5px);
 }

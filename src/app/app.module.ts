@@ -14,6 +14,8 @@ import { ContactFormComponent } from "./components/contact-form/contact-form.com
 import { ReactiveFormsModule } from "@angular/forms";
 import { RangeSliderComponent } from "./components/portfolio/individual-components/range-slider/range-slider.component";
 import { LoadingIndicatorComponent } from "./components/portfolio/individual-components/loading-indicator/loading-indicator.component";
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { BottomSheetExampleComponent } from './bottom-sheet-example/bottom-sheet-example.component';
 
 @NgModule({
     declarations: [
@@ -28,8 +30,9 @@ import { LoadingIndicatorComponent } from "./components/portfolio/individual-com
         ContactFormComponent,
         RangeSliderComponent,
         LoadingIndicatorComponent,
+        BottomSheetExampleComponent,
     ],
-    imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, ReactiveFormsModule],
+    imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, ReactiveFormsModule, MatBottomSheetModule],
     providers: [],
     bootstrap: [AppComponent],
 })
