@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 
 interface NavigationMenuOption {
     key: string;
@@ -10,6 +10,8 @@ interface NavigationMenuOption {
     selector: "app-navigation-menu",
     templateUrl: "./navigation-menu.component.html",
     styleUrls: ["./navigation-menu.component.scss"],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false,
 })
 export class NavigationMenuComponent {
     menuOpen = false;

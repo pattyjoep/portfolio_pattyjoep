@@ -1,9 +1,11 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
+import { Component, ViewChild, ElementRef, AfterViewInit, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
     selector: "app-range-slider",
     templateUrl: "./range-slider.component.html",
     styleUrl: "./range-slider.component.scss",
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false,
 })
 export class RangeSliderComponent {
     sliderValue = 50;

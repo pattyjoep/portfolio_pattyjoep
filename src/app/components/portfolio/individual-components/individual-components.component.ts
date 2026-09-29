@@ -1,10 +1,12 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { DataService } from "../../../services/data/data.service";
 import { IndividualComponent } from "../../../../models/individual-component.model";
 @Component({
     selector: "app-individual-components",
     templateUrl: "./individual-components.component.html",
     styleUrl: "./individual-components.component.scss",
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false,
 })
 export class IndividualComponentsComponent {
     individualComponents: IndividualComponent[] = [];
