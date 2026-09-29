@@ -5,6 +5,7 @@ import { IndividualComponent } from "../../../../models/individual-component.mod
     selector: "app-individual-components",
     templateUrl: "./individual-components.component.html",
     styleUrl: "./individual-components.component.scss",
+    standalone: false
 })
 export class IndividualComponentsComponent {
     individualComponents: IndividualComponent[] = [];

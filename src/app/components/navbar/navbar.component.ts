@@ -5,6 +5,7 @@ import { WindowService } from "../../services/window/window.service";
     selector: "app-navbar",
     templateUrl: "./navbar.component.html",
     styleUrl: "./navbar.component.scss",
+    standalone: false
 })
 export class NavbarComponent {
     constructor(public windowService: WindowService) {}

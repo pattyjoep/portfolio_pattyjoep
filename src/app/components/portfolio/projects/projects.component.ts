@@ -6,6 +6,7 @@ import { WindowService } from "../../../services/window/window.service";
     selector: "app-projects",
     templateUrl: "./projects.component.html",
     styleUrl: "./projects.component.scss",
+    standalone: false
 })
 export class ProjectsComponent {
     projects: Project[] = [];
