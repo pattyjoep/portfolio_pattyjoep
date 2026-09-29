@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { trigger, transition, style, animate } from "@angular/animations";
 
@@ -19,7 +19,8 @@ import { trigger, transition, style, animate } from "@angular/animations";
             ]),
         ]),
     ],
-    standalone: false
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false,
 })
 export class ContactFormComponent {
     form = new FormGroup({

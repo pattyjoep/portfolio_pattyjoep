@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { DataService } from "../../../services/data/data.service";
 import { Project } from "../../../../models/project.model";
 import { WindowService } from "../../../services/window/window.service";
@@ -6,7 +6,8 @@ import { WindowService } from "../../../services/window/window.service";
     selector: "app-projects",
     templateUrl: "./projects.component.html",
     styleUrl: "./projects.component.scss",
-    standalone: false
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false,
 })
 export class ProjectsComponent {
     projects: Project[] = [];
